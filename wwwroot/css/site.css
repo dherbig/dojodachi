@@ -1,0 +1,27 @@
+/*Write all of your CSS here*/
+
+* div {
+    border: solid 2px black;
+}
+
+* form {
+    display: inline-block;
+    text-align: center
+}
+
+statusBar {
+    width: 100%;
+}
+
+dachiBox div {
+    max-width: 30%;
+}
+
+imgBox img {
+    min-width: 100%;
+    margin: auto;
+}
+
+navBar {
+    font-size: larger;
+}

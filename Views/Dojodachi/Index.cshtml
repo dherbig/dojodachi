@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Dojodachi!";
+}
+<div id="wrapper">
+    <div id="navBar" class="row">
+            <div class="col-sm-3">
+                Fullness: @ViewBag.Full
+            </div>
+            <div class="col-sm-3">
+                Happiness: @ViewBag.Happy
+            </div>
+            <div class="col-sm-3">
+                Meals: @ViewBag.Meals
+            </div>
+            <div class="col-sm-3">
+                Energy: @ViewBag.Energy
+            </div>
+    </div>
+    <div id="dachiBox" class="row">
+        <div class="col-sm-2"></div>
+        <div id="imgBox" class="col-sm-8">
+                <img src="~/images/@ViewBag.Img" alt="" class="img-responsive img-rounded">
+            <p>@ViewBag.Action</p>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div id="actionBar" class="row">
+        <form action="feed" class="col-sm-3"><input type="submit" value="Feed"></form>
+        <form action="play" class="col-sm-3"><input type="submit" value="Play"></form>
+        <form action="work" class="col-sm-3"><input type="submit" value="Work"></form>
+        <form action="sleep" class="col-sm-3"><input type="submit" value="Sleep"></form>
+    </div>
+</div>
